@@ -61,7 +61,7 @@ def displayRoomBookings(roomName):
         df.iat[stringDay, periodNumber] = name
         df.to_csv("sputnikbookings.csv", index=True)
         print ('\a') #Plays a system sound.
-        periodNumber +=1
+        periodNumber += 1
         print("Room is now booked for you at period:", periodNumber, "on", selectedDay)
         print("                           ")
     main()
